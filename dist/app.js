@@ -1,0 +1,77 @@
+const companies = [
+  {name:'Critical Software', mark:'CS', sector:'Software', tags:'safety critical aerospace mobility energy', location:'Taveiro · Coimbra', founded:'1998', mission:'Engineering dependable software for complex, safety-critical systems—and helping build a better, safer world.', people:'João Carreira · CEO; Gonçalo Quadros · Chairman', source:'https://criticalsoftware.com/en/contacts'},
+  {name:'Feedzai', mark:'FZ', sector:'AI & Data', tags:'fintech ai fraud financial crime machine learning', location:'IPN · Rua Pedro Nunes', founded:'2011', mission:'Using trusted AI to detect and prevent financial crime so people and payments can move safely.', people:'Nuno Sebastião · Co-founder & CEO; Pedro Bizarro · Co-founder & CSO', source:'https://careers.feedzai.com/office/coimbra/'},
+  {name:'WIT Software', mark:'WIT', sector:'Software', tags:'telecom mobile communications applications', location:'Taveiro · Coimbra', founded:'2001', mission:'Building advanced mobile software products and solutions for telecom operators and global technology companies.', people:'Coimbra-born mobile software specialist', source:'https://www.wit-software.com/contacts.html'},
+  {name:'Present Technologies', mark:'PT', sector:'Software', tags:'web mobile enterprise ai consulting', location:'IPN · Rua Pedro Nunes', founded:'2000', mission:'Designing and delivering innovative software—from large-scale digital platforms to market-leading mobile apps.', people:'Founded in Coimbra by a five-person team', source:'https://www.present-technologies.com/'},
+  {name:'The Loop co.', mark:'LOOP', sector:'Software', tags:'circular economy sustainability saas retail', location:'Praça do Comércio · Coimbra', founded:'2016', mission:'Investing in technology, businesses and people that use innovation and sustainability to drive change.', people:'João Bernardo Parreira · CEO; Manuel Tovar · COO; Ricardo Morgado · CSO; João Rodrigues · CTO', source:'https://www.theloop.pt/'},
+  {name:'ETHIACK', mark:'ETH', sector:'AI & Data', tags:'cybersecurity ethical hacking security ai', location:'IPN · Rua Pedro Nunes', founded:'2019', mission:'Combining machine and human ethical hacking to continuously uncover the vulnerabilities that matter.', people:'Jorge Monteiro · CEO; André Baptista · Co-founder & CTO', source:'https://blog.ethiack.com/blog/from-compliance-to-continuous-security-ethiacks-vision-for-financial-cybersecurity'},
+  {name:'Active Space Technologies', mark:'AST', sector:'Deep Tech', tags:'space aerospace engineering thermal embedded systems', location:'Coimbra · Portugal', founded:'2004', mission:'Delivering thermo-mechanical, electronics and systems engineering for demanding space and industrial missions.', people:'A University of Coimbra / IPN ecosystem company', source:'https://www.activespacetech.com/'},
+  {name:'CIBERBIT', mark:'CB', sector:'Health Tech', tags:'healthcare retail software hospital digital transformation', location:'Eiras · Coimbra', founded:'1995', mission:'Equipping healthcare and retail organisations with real-time software that improves operations and experiences.', people:'A long-standing Coimbra software product company', source:'https://ciberbit.pt/'},
+  {name:'RedLight', mark:'RL', sector:'Software', tags:'studio product development web mobile mvp', location:'Coimbra · Portugal', founded:'2013', mission:'Building impactful software products with seamless communication and process transparency.', people:'Coimbra software development studio', source:'https://redlight.dev/'},
+  {name:'Apollotec', mark:'AP', sector:'Software', tags:'digital cloud bespoke development strategy', location:'Coimbra · Portugal', founded:'2016', mission:'Helping businesses make technology a strategic ally through secure, efficient and sustainable digital solutions.', people:'Portuguese digital technology company headquartered in Coimbra', source:'https://apollotec.pt/en/sobre/'},
+  {name:'Softimbra', mark:'SOFT', sector:'Deep Tech', tags:'agritech agriculture livestock software', location:'Coimbra · Portugal', founded:'1998', mission:'Creating intuitive, technologically advanced software for agriculture and livestock professionals.', people:'Specialist in Portuguese agricultural informatics', source:'https://softimbra.com/Pages/Empresa/1'},
+  {name:'Bluepharma', mark:'BLU', sector:'Health Tech', tags:'pharma biotech r&d medicines manufacturing life sciences', location:'São Martinho do Bispo · Coimbra', founded:'2001', mission:'Researching and developing high-value medicines while continuously improving quality and manufacturing innovation.', people:'Paulo Barradas Rebelo · Chairman; Sérgio Simões & Miguel Silvestre · CEOs', source:'https://www.bluepharmagroup.com/en/about-us/company'},
+  {name:'Stratio Automotive', mark:'STR', sector:'AI & Data', tags:'automotive fleet predictive maintenance machine learning mobility', location:'IPN · Rua Pedro Nunes', founded:'2017', mission:'Using AI-powered predictive maintenance and fleet automation to help transport operators move toward zero downtime.', people:'A Coimbra technology team serving transport operators worldwide', source:'https://www.stratioautomotive.com/terms-conditions'},
+  {name:'Intermédia Informática', mark:'INT', sector:'Software', tags:'information technology hardware software telecom retail services', location:'Santo António dos Olivais · Coimbra', founded:'1995', mission:'Supplying organisations and professionals with computing, telecommunications and digital infrastructure from Coimbra.', people:'Independent Coimbra IT equipment and services specialist', source:'https://intermedia.pt/'},
+  {name:'RCSOFT', mark:'RCS', sector:'Software', tags:'erp manufacturing rfid warehouse billing business software', location:'Taveiro · Coimbra', founded:'—', mission:'Creating integrated business and industrial software—from production and RFID to logistics, billing and secure continuity.', people:'Coimbra software company serving business and industrial operations', source:'https://www.rcsoft.pt/'},
+  {name:'Enso Origins', mark:'ENSO', sector:'Software', tags:'process reengineering digital transformation public sector solutions', location:'IPN · Rua Pedro Nunes', founded:'—', mission:'Developing digital solutions by re-engineering technological processes for organisations and public-sector challenges.', people:'An IPN-incubated technology company', source:'https://enso-origins.com/contactos'},
+  {name:'Cleanwatts', mark:'CW', sector:'Deep Tech', tags:'climate energy communities renewables decarbonization software', location:'IPN · Rua Pedro Nunes', founded:'2020', mission:'Decentralising, digitalising and democratising clean energy through locally managed renewable-energy communities.', people:'Coimbra-founded climate-tech company with international operations', source:'https://cleanwatts.energy/sobre-nos/'},
+  {name:'FiberSight', mark:'FS', sector:'Deep Tech', tags:'fiber optics sensing infrastructure leaks temperature humidity cern', location:'IPN · Coimbra', founded:'2021', mission:'Turning ordinary fibre-optic cables into distributed sensors for monitoring temperature, humidity and leaks across critical infrastructure.', people:'Tiago Neves · Co-founder & CEO; Manuel Soeiro · Co-founder & CTO', source:'https://fibersight.pt/about'},
+  {name:'Filo Coimbra', mark:'FILO', sector:'Software', tags:'lossless compression storage infrastructure performance data', location:'IPN · Rua Pedro Nunes', founded:'2024', mission:'Developing lossless compression technology that cuts storage costs while multiplying infrastructure capacity.', people:'A current IPN-incubated software company', source:'https://www.ipn.pt/incubadora-empresas/'},
+  {name:'Neuraspace', mark:'NEU', sector:'AI & Data', tags:'space traffic management debris satellites ai machine learning', location:'IPN · Rua Pedro Nunes', founded:'2020', mission:'Using artificial intelligence to make satellite operations safer and more sustainable through space-domain awareness and traffic management.', people:'A Coimbra-born space-tech company with a growing European footprint', source:'https://www.neuraspace.com/'},
+  {name:'AirSafe.ai', mark:'AIR', sector:'AI & Data', tags:'drones uav aviation collision avoidance detect and avoid bvlos ai', location:'IPN · Coimbra', founded:'—', mission:'Building detect-and-avoid technology that helps drones operate safely beyond the pilot’s visual line of sight.', people:'A current IPN-incubated autonomous-aviation company', source:'https://www.ipn.pt/incubadora-empresas/'},
+  {name:'DIG-IN', mark:'DIG', sector:'AI & Data', tags:'foodservice analytics data fmcg restaurants digital platforms', location:'IPN · Coimbra', founded:'—', mission:'Turning foodservice data into competitive intelligence for consumer brands, digital platforms and restaurant chains.', people:'A current IPN-incubated data company', source:'https://www.ipn.pt/incubadora-empresas/'}
+];
+
+const grid = document.querySelector('#companyGrid');
+const search = document.querySelector('#search');
+const count = document.querySelector('#resultCount');
+const empty = document.querySelector('#emptyState');
+const dialog = document.querySelector('#companyDialog');
+const dialogContent = document.querySelector('#dialogContent');
+let activeFilter = 'All';
+
+function cardTemplate(company, index){
+  return `<article class="company-card" tabindex="0" data-index="${index}" aria-label="Open ${company.name} profile">
+    <div class="card-top"><span class="company-mark">${company.mark}</span><span class="card-index">${String(index+1).padStart(2,'0')} / ${companies.length}</span></div>
+    <h3>${company.name}</h3><span class="sector">${company.sector}</span>
+    <p class="mission">${company.mission}</p>
+    <div class="card-meta"><span>${company.location}</span><button aria-label="Open ${company.name} details">↗</button></div>
+  </article>`;
+}
+
+function render(){
+  const query = search.value.trim().toLowerCase();
+  const visible = companies.map((c,index)=>({...c,index})).filter(c => {
+    const categoryMatch = activeFilter === 'All' || c.sector === activeFilter;
+    const textMatch = `${c.name} ${c.sector} ${c.tags} ${c.location} ${c.mission}`.toLowerCase().includes(query);
+    return categoryMatch && textMatch;
+  });
+  grid.innerHTML = visible.map(c=>cardTemplate(c,c.index)).join('');
+  count.textContent = visible.length;
+  empty.hidden = visible.length !== 0;
+}
+
+function openCompany(index){
+  const c = companies[index];
+  dialogContent.innerHTML = `<div class="dialog-inner">
+    <span class="dialog-number">Profile ${String(index+1).padStart(2,'0')} / Coimbra Tech Atlas</span>
+    <h2 id="dialogTitle">${c.name}</h2><span class="dialog-sector">${c.sector}</span>
+    <p class="dialog-mission">${c.mission}</p>
+    <div class="detail-grid"><div><span>Coimbra presence</span><b>${c.location}</b></div><div><span>Founded</span><b>${c.founded}</b></div></div>
+    <p class="dialog-person"><strong>People / context:</strong> ${c.people}</p>
+    <a class="dialog-source" href="${c.source}" target="_blank" rel="noreferrer">Visit primary source ↗</a>
+  </div>`;
+  dialog.showModal();
+}
+
+search.addEventListener('input',render);
+document.querySelectorAll('.filters button').forEach(button=>button.addEventListener('click',()=>{
+  document.querySelector('.filters .active').classList.remove('active');
+  button.classList.add('active'); activeFilter=button.dataset.filter; render();
+}));
+grid.addEventListener('click',event=>{const card=event.target.closest('.company-card');if(card)openCompany(Number(card.dataset.index));});
+grid.addEventListener('keydown',event=>{if((event.key==='Enter'||event.key===' ')&&event.target.classList.contains('company-card')){event.preventDefault();openCompany(Number(event.target.dataset.index));}});
+document.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+render();
