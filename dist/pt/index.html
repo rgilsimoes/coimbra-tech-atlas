@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Um mapa independente das empresas e do ecossistema tecnológico da região de Coimbra.">
+  <title>Atlas Tecnológico de Coimbra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../go-coimbra.css">
+  <link rel="stylesheet" href="../language.css?v=2">
+  <link rel="alternate" hreflang="en" href="../">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="nav-shell">
+    <a class="brand" href="#top" aria-label="Página inicial do Coimbra Tech Atlas">
+      <span class="brand-mark">C<span>/</span>T</span>
+      <span>Coimbra<br>Tech Atlas</span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#directory">Diretório</a>
+      <a href="#go-coimbra">Go Coimbra</a>
+      <a href="#people">Pessoas</a>
+      <a href="#field-notes">Notas</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="language-link" href="../" lang="en" hreflang="en">EN</a>
+      <a class="nav-cta" href="#directory">Explorar <span>↘</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> 40.2033° N · 8.4103° W</p>
+        <h1>Tecnologia,<br><em>com sentido</em><br>de lugar.</h1>
+        <p class="hero-intro">Um retrato das empresas que fazem de Coimbra um lugar onde se criam sistemas críticos, produtos digitais, tecnologia espacial, soluções de saúde e novos modelos para uma economia mais circular.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#directory">Ver empresas <span>↓</span></a>
+          <a class="text-link" href="https://coimbratechdistrict.com/" target="_blank" rel="noreferrer">Abrir mapa do ecossistema ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Mapa abstrato inspirado no rio e nas colinas de Coimbra">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="map-label label-a"><span>01</span> Universidade</div>
+        <div class="map-label label-b"><span>02</span> IPN</div>
+        <div class="map-label label-c"><span>03</span> Taveiro</div>
+        <svg viewBox="0 0 560 640" role="img" aria-hidden="true">
+          <path class="river" d="M380 -20C338 72 421 113 360 190c-50 64-35 115 6 174 42 59 9 113-45 155-48 37-66 88-40 151"/>
+          <path class="contour" d="M71 84c107-69 240-57 343 24 91 72 101 193 43 288-53 87-165 149-274 120C72 487 10 380 23 271 32 190 8 125 71 84Z"/>
+          <path class="contour thin" d="M103 128c83-56 195-46 277 18 73 57 82 153 35 229-42 70-132 119-219 96-89-23-139-108-129-195 8-65-14-114 36-148Z"/>
+          <path class="contour thin" d="M148 182c56-38 132-32 187 12 49 38 55 103 24 154-29 47-89 80-148 65-60-16-94-73-87-132 5-44-10-77 24-99Z"/>
+          <circle class="pulse" cx="306" cy="235" r="11"/><circle class="dot" cx="236" cy="330" r="7"/><circle class="dot" cx="367" cy="430" r="7"/>
+        </svg>
+        <div class="visual-caption"><span>MONDEGO / CORREDOR DO CONHECIMENTO</span><b>22</b> empresas no atlas</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Setores em destaque">
+      <div><span>IA & FINTECH</span><i>✦</i><span>SOFTWARE</span><i>✦</i><span>ESPAÇO</span><i>✦</i><span>CIBERSEGURANÇA</span><i>✦</i><span>TECNOLOGIA DA SAÚDE</span><i>✦</i><span>TECNOLOGIA CIRCULAR</span></div>
+    </section>
+
+    <section class="intro-grid" id="field-notes">
+      <div>
+        <p class="section-kicker">01 / Porquê Coimbra</p>
+        <h2>Uma cidade universitária que transforma investigação em empresas.</h2>
+      </div>
+      <div class="intro-copy">
+        <p>A tecnologia em Coimbra beneficia de uma proximidade rara: a Universidade, o Instituto Pedro Nunes e uma comunidade de fundadores encontram-se a poucos minutos de distância. É esta ligação direta que permite levar conhecimento dos laboratórios para produtos usados em todo o mundo.</p>
+        <p>O atlas reúne empresas com sede ou presença confirmada na região. Há negócios consolidados, startups e equipas altamente especializadas. Cada perfil remete para uma fonte oficial da empresa ou do ecossistema.</p>
+      </div>
+      <aside class="stat-card">
+        <b>560+</b>
+        <span>empresas constituídas com o apoio da incubadora do IPN entre 1996 e 2024</span>
+        <a href="https://www.ipn.pt/incubadora/" target="_blank" rel="noreferrer">Fonte: IPN ↗</a>
+      </aside>
+    </section>
+
+    <section class="go-coimbra" id="go-coimbra">
+      <div class="go-title">
+        <p class="section-kicker">Ecossistema em destaque / 2026</p>
+        <div class="go-wordmark" aria-label="Go Coimbra">GO<br><span>COIMBRA</span></div>
+        <p class="go-label">Agência municipal para<br>investimento & inovação</p>
+      </div>
+      <div class="go-content">
+        <div class="go-intro">
+          <p class="section-kicker">Uma porta de entrada para o ecossistema</p>
+          <h2>Transformar conhecimento em oportunidade.</h2>
+          <p>A Go Coimbra nasce da evolução da empresa municipal iParque e assume um papel mais amplo na captação de investimento e na dinamização da inovação. Pretende ser a porta de entrada para empresas e investidores que queiram instalar-se, crescer ou desenvolver projetos no concelho, facilitando a ligação ao município, às instituições científicas e ao tecido empresarial.</p>
+        </div>
+        <div class="go-pillars" aria-label="As quatro áreas de atuação da Go Coimbra">
+          <article><span>01</span><h3>Investir & crescer</h3><p>Captar novos projetos, apoiar a expansão das empresas que já estão no concelho e facilitar o acesso a espaços e infraestruturas.</p></article>
+          <article><span>02</span><h3>Testar & acelerar</h3><p>Fazer de Coimbra um território onde novas soluções possam ser experimentadas em contexto real, da saúde e indústria farmacêutica ao espaço e à economia verde.</p></article>
+          <article><span>03</span><h3>Articular o ecossistema</h3><p>Pôr ciência, talento, empresas, investidores e setor público a trabalhar de forma mais próxima e coordenada.</p></article>
+          <article><span>04</span><h3>Dar projeção a Coimbra</h3><p>Construir parcerias dentro e fora do país e afirmar Coimbra internacionalmente, sem perder a capacidade de atrair oportunidades para a região.</p></article>
+        </div>
+      </div>
+      <div class="go-activation">
+        <div>
+          <span class="go-activation-label">Em curso</span>
+          <strong>Coimbra Supernova</strong>
+          <p>A Go Coimbra assegura a coordenação operacional desta aliança, que reúne investigação, instituições e empresas ligadas ao setor espacial.</p>
+          <a href="https://www.coimbra.pt/2026/10/glex-ignition-reforca-projecao-internacional-de-coimbra-no-setor-espacial/" target="_blank" rel="noreferrer">Ler a notícia do município ↗</a>
+        </div>
+        <div>
+          <span class="go-activation-label">Palco internacional</span>
+          <strong>“Temos tudo”</strong>
+          <p>Na Web Summit 2026, a Go Coimbra participa ao lado da Universidade, do IPN e da região metropolitana para dar visibilidade a 12 startups da região.</p>
+          <a href="https://www.coimbra.pt/2026/09/coimbra-estreia-participacao-conjunta-na-web-summit/" target="_blank" rel="noreferrer">Ver a iniciativa na Web Summit ↗</a>
+        </div>
+        <div class="go-targets">
+          <span class="go-activation-label">Metas selecionadas para 2026</span>
+          <ul>
+            <li><b>02</b> investimentos nacionais ou internacionais</li>
+            <li><b>03</b> encontros empresariais e ações de capacitação</li>
+            <li><b>01</b> projeto de expansão empresarial apoiado</li>
+            <li><b>01</b> novo portal de apoio ao investidor</li>
+          </ul>
+        </div>
+      </div>
+      <div class="go-source">
+        <p>A Go Coimbra continua a ser uma empresa municipal, detida maioritariamente pelo Município de Coimbra. O seu novo âmbito de atuação inclui investimento, inovação, empreendedorismo, transferência de tecnologia, gestão de áreas empresariais e promoção internacional.</p>
+        <a href="https://www.coimbra.pt/2026/09/municipio-avanca-com-go-coimbra-como-agencia-de-investimento-e-inovacao/" target="_blank" rel="noreferrer">Fonte primária · Município de Coimbra ↗</a>
+      </div>
+    </section>
+
+    <section class="directory" id="directory">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">02 / Diretório de empresas</p>
+          <h2>Quem está a construir o futuro.</h2>
+        </div>
+        <p><strong id="resultCount">22</strong> empresas no diretório</p>
+      </div>
+      <div class="controls" aria-label="Controlos do diretório">
+        <label class="search-wrap">
+          <span class="sr-only">Pesquisar empresas</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg>
+          <input id="search" type="search" placeholder="Pesquisar por nome, setor ou local…" autocomplete="off">
+        </label>
+        <div class="filters" role="group" aria-label="Filtrar por setor">
+          <button class="active" data-filter="Todos">Todos</button>
+          <button data-filter="Software">Software</button>
+          <button data-filter="IA e Dados">IA e Dados</button>
+          <button data-filter="Tecnologia Avançada">Tecnologia Avançada</button>
+          <button data-filter="Tecnologia da Saúde">Tecnologia da Saúde</button>
+        </div>
+      </div>
+      <div class="company-grid" id="companyGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>Nenhuma empresa corresponde à pesquisa. Experimente termos mais abrangentes.</div>
+      <p class="scope-note">Nota de âmbito: a “região de Coimbra” inclui o concelho e os polos empresariais próximos. Este é um projeto editorial baseado em fontes públicas, não um registo comercial oficial. O diretório será atualizado à medida que o ecossistema evoluir.</p>
+    </section>
+
+    <section class="image-story" aria-label="Uma história visual da tecnologia em Coimbra">
+      <figure class="image-tall">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=82" alt="Interior contemporâneo de um espaço de trabalho colaborativo" loading="lazy">
+        <figcaption>Espaços de trabalho / 01</figcaption>
+      </figure>
+      <div class="image-story-copy">
+        <p class="section-kicker">03 / Notas de campo</p>
+        <h2>Entre pedra<br>antiga &<br><em>novos sinais.</em></h2>
+        <p>Da universidade histórica aos laboratórios do IPN, passando pelos polos empresariais de Eiras e Taveiro, Coimbra concentra num território compacto uma rede de conhecimento, indústria e empreendedorismo.</p>
+      </div>
+      <figure class="image-wide">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=82" alt="Pormenor de uma placa de circuito eletrónico" loading="lazy">
+        <figcaption>Tecnologia avançada / 02</figcaption>
+      </figure>
+      <figure class="image-square">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=82" alt="Uma equipa tecnológica a colaborar em redor de uma mesa" loading="lazy">
+        <figcaption>Equipas / 03</figcaption>
+      </figure>
+    </section>
+
+    <section class="people" id="people">
+      <div class="section-heading light">
+        <div>
+          <p class="section-kicker">04 / Pessoas a conhecer</p>
+          <h2>Sinais do ecossistema.</h2>
+        </div>
+        <p>Uma seleção de fundadores e líderes identificados nas fontes oficiais das respetivas empresas.</p>
+      </div>
+      <div class="people-grid">
+        <article><span class="portrait p1">NS</span><div><h3>Nuno Sebastião</h3><p>Cofundador, presidente & CEO · Feedzai</p></div><a href="https://www.feedzai.com/leadership/nuno-sebastiao/" target="_blank" rel="noreferrer" aria-label="Fonte sobre Nuno Sebastião">↗</a></article>
+        <article><span class="portrait p2">GQ</span><div><h3>Gonçalo Quadros</h3><p>Presidente · Critical Software</p></div><a href="https://criticalsoftware.com/en/people" target="_blank" rel="noreferrer" aria-label="Fonte sobre Gonçalo Quadros">↗</a></article>
+        <article><span class="portrait p3">AB</span><div><h3>André Baptista</h3><p>Cofundador & CTO · Ethiack</p></div><a href="https://blog.ethiack.com/blog/from-compliance-to-continuous-security-ethiacks-vision-for-financial-cybersecurity" target="_blank" rel="noreferrer" aria-label="Fonte sobre André Baptista">↗</a></article>
+        <article><span class="portrait p4">JP</span><div><h3>João Bernardo Parreira</h3><p>Cofundador & CEO · The Loop co.</p></div><a href="https://www.theloop.pt/" target="_blank" rel="noreferrer" aria-label="Fonte sobre João Bernardo Parreira">↗</a></article>
+      </div>
+    </section>
+
+    <section class="sources" id="sources">
+      <div>
+        <p class="section-kicker">05 / Método & fontes</p>
+        <h2>Fontes abertas para consulta.</h2>
+      </div>
+      <div>
+        <p>Os perfis baseiam-se em páginas institucionais, áreas de carreiras e contactos oficiais. O enquadramento do ecossistema foi complementado com informação do Instituto Pedro Nunes e do Coimbra Tech District. Os dados foram revistos em outubro de 2026 e serão atualizados sempre que necessário.</p>
+        <div class="source-links">
+          <a href="https://coimbratechdistrict.com/" target="_blank" rel="noreferrer"><span>Coimbra Tech District</span><b>↗</b></a>
+          <a href="https://www.ipn.pt/incubadora/" target="_blank" rel="noreferrer"><span>Instituto Pedro Nunes</span><b>↗</b></a>
+          <a href="https://incoimbra.pt/empresas/" target="_blank" rel="noreferrer"><span>inCoimbra Startup Hub</span><b>↗</b></a>
+          <a href="https://www.coimbra.pt/2026/09/municipio-avanca-com-go-coimbra-como-agencia-de-investimento-e-inovacao/" target="_blank" rel="noreferrer"><span>Go Coimbra · Município de Coimbra</span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">C<span>/</span>T</span><span>Coimbra<br>Tech Atlas</span></div>
+    <p>Um diretório visual independente.<br>Informação apoiada em fontes primárias.</p>
+    <a href="#top">Voltar ao início ↑</a>
+  </footer>
+
+  <dialog id="companyDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" aria-label="Fechar detalhes da empresa">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
