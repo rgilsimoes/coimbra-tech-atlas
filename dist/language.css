@@ -1,0 +1,35 @@
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.language-link {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: inherit;
+  text-decoration: none;
+  font: 500 12px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.language-link:hover,
+.language-link:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (min-width: 951px) {
+  .image-story {
+    grid-template-rows: minmax(460px, auto) 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-actions { gap: 0; }
+}
