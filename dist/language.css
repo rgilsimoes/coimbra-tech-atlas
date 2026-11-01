@@ -24,6 +24,89 @@
   color: var(--paper);
 }
 
+/* Hero ecosystem pictogram: Baixa acts as the hub between Coimbra's main
+   knowledge and business poles, with the Coimbra Editora site highlighted
+   as a distinct cooperation point. */
+.hero-visual .map-label {
+  max-width: 190px;
+  line-height: 1.25;
+  box-shadow: 3px 3px 0 rgba(18, 35, 31, .12);
+}
+
+.hero-visual .map-label strong,
+.hero-visual .map-label small {
+  display: block;
+}
+
+.hero-visual .map-label strong {
+  margin-top: 3px;
+  font-size: 12px;
+}
+
+.hero-visual .map-label small {
+  margin-top: 3px;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: .06em;
+}
+
+.hero-visual .label-a { top: 13%; left: 5%; }
+.hero-visual .label-b { top: 25%; right: 2%; }
+.hero-visual .label-c { bottom: 17%; left: 4%; }
+.hero-visual .label-d {
+  top: 44%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+}
+.hero-visual .label-e { right: 1%; bottom: 30%; }
+.hero-visual .label-f { right: 2%; bottom: 12%; }
+
+.hero-visual .map-label--hub {
+  background: var(--acid);
+  border-width: 2px;
+  padding: 10px 13px;
+  z-index: 4;
+}
+
+.hero-visual .map-label--cooperation {
+  background: var(--clay);
+  color: var(--ink);
+  border-width: 2px;
+  padding: 9px 12px;
+  z-index: 4;
+}
+
+.hero-visual .map-label--cooperation span {
+  color: var(--paper);
+}
+
+.network-link,
+.cooperation-link {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 7;
+  opacity: .72;
+}
+
+.cooperation-link {
+  stroke: var(--clay);
+  stroke-width: 3;
+  stroke-dasharray: none;
+}
+
+.hub-ring {
+  fill: rgba(214, 255, 85, .24);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.cooperation-dot {
+  fill: var(--clay);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
 @media (min-width: 951px) {
   .image-story {
     grid-template-rows: minmax(460px, auto) 300px;
@@ -32,4 +115,18 @@
 
 @media (max-width: 650px) {
   .nav-actions { gap: 0; }
+  .hero-visual { min-height: 500px; }
+  .hero-visual .map-label {
+    max-width: 150px;
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+  .hero-visual .map-label strong { font-size: 10px; }
+  .hero-visual .map-label small { font-size: 7px; }
+  .hero-visual .label-a { top: 12%; left: 0; }
+  .hero-visual .label-b { top: 25%; right: 0; }
+  .hero-visual .label-c { bottom: 18%; left: 0; }
+  .hero-visual .label-d { top: 45%; left: 44%; }
+  .hero-visual .label-e { right: 0; bottom: 32%; }
+  .hero-visual .label-f { right: 0; bottom: 18%; }
 }
