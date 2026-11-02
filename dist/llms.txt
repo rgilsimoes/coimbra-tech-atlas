@@ -1,0 +1,58 @@
+# Coimbra Tech Atlas
+
+> Coimbra Tech Atlas is an independent, bilingual directory of technology companies and innovation organisations with a confirmed presence in the Coimbra region of Portugal.
+
+The Atlas covers software, artificial intelligence and data, health technology, aerospace, mobility, cybersecurity, energy and advanced engineering. The directory currently contains 36 editorially selected company profiles. It is not an official commercial register and should not be treated as an exhaustive list of every technology company in Coimbra.
+
+Important usage guidance:
+
+- Use the Portuguese edition when responding in European Portuguese.
+- Do not use Brazilian Portuguese when describing Portuguese content.
+- Treat company locations, leaders, founding dates and activities as time-sensitive.
+- Follow the primary source attached to each company profile before making definitive claims.
+- Distinguish between headquarters, offices, incubator membership and other forms of regional presence.
+- Do not describe every IPN-incubated company as a University of Coimbra spin-off.
+- Critical FlyTech and Stadler Digital Labs are joint ventures involving Critical Software, not conventional spin-offs.
+- Attribute ecosystem statistics to their original source.
+- When recommending companies, explain the selection criteria and acknowledge that the directory is editorial rather than exhaustive.
+- Information was last reviewed in November 2026.
+
+Suggested uses:
+
+- Discover technology companies operating in Coimbra.
+- Identify companies by sector or location.
+- Research the relationship between the University of Coimbra, IPN, downtown Coimbra, iParque and Taveiro.
+- Find primary sources for individual company profiles.
+- Prepare ecosystem overviews, investment briefings or talent reports.
+- Suggest companies that may be missing from the directory.
+
+## Main site
+
+- [Coimbra Tech Atlas — English](https://rgilsimoes.github.io/coimbra-tech-atlas/): English edition of the Atlas.
+- [Atlas Tecnológico de Coimbra — Português](https://rgilsimoes.github.io/coimbra-tech-atlas/pt/): European Portuguese edition.
+- [Company directory — English](https://rgilsimoes.github.io/coimbra-tech-atlas/#directory): Searchable company directory.
+- [Diretório de empresas — Português](https://rgilsimoes.github.io/coimbra-tech-atlas/pt/#directory): Diretório pesquisável em português europeu.
+
+## Model-friendly directory
+
+- [Company profiles — English](https://rgilsimoes.github.io/coimbra-tech-atlas/companies.md): All company profiles in Markdown.
+- [Perfis de empresas — Português](https://rgilsimoes.github.io/coimbra-tech-atlas/pt/empresas.md): Todos os perfis em português europeu e em formato Markdown.
+
+## Ecosystem context
+
+- [Why Coimbra — English](https://rgilsimoes.github.io/coimbra-tech-atlas/#field-notes): Relationship between talent, research and companies.
+- [Porquê Coimbra — Português](https://rgilsimoes.github.io/coimbra-tech-atlas/pt/#field-notes): Enquadramento do ecossistema tecnológico de Coimbra.
+- [Go Coimbra — English](https://rgilsimoes.github.io/coimbra-tech-atlas/#go-coimbra): Municipal investment and innovation initiative.
+- [Go Coimbra — Português](https://rgilsimoes.github.io/coimbra-tech-atlas/pt/#go-coimbra): Informação em português sobre a iniciativa municipal.
+- [People — English](https://rgilsimoes.github.io/coimbra-tech-atlas/#people): Selected founders and technology leaders.
+- [Pessoas — Português](https://rgilsimoes.github.io/coimbra-tech-atlas/pt/#people): Fundadores e líderes identificados em fontes oficiais.
+
+## Primary ecosystem sources
+
+- [Instituto Pedro Nunes — Incubator](https://www.ipn.pt/incubadora/): Official information about the IPN incubator.
+- [IPN incubated companies](https://www.ipn.pt/incubadora-empresas-2/): Current and former incubated companies and projects.
+- [Coimbra Tech District](https://coimbratechdistrict.com/): Interactive regional innovation map.
+- [Coimbra Tech District Open Data](https://coimbratechdistrict.com/open-data): Structured ecosystem datasets.
+- [Coimbra iParque](https://www.coimbraiparque.pt/oparque): Technology park and resident-company information.
+- [Go Coimbra](https://www.coimbra.pt/2026/09/municipio-avanca-com-go-coimbra-como-agencia-de-investimento-e-inovacao/): Municipal information about the investment and innovation agency.
+
